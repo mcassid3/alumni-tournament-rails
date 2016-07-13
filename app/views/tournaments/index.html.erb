@@ -5,10 +5,37 @@
         <source src= "<%=image_path("promo.webm")%>" type="video/webm">
       </video>
     </div>
-    <div class="video-overlay"></div>
+
+    <div class="video-overlay">
+          <div class="nav-link-container">
+          
+            <div class= "nav-link">
+              <%= link_to 'Home', root_path %>
+            </div>
+
+            <div class= "nav-link">
+              <%= link_to 'Enter A Team', root_path %>
+            </div>
+
+            <div class= "nav-link">
+              <%= link_to 'Join A Team', root_path %>
+            </div>
+
+            <div class= "nav-link">
+              <%= link_to 'Login', root_path %>
+            </div>  
+
+        </div>
+
+
+    </div>
+
     <div class="callout-inner">
       <div class = "callout-content">
-      <img id = "logo" src="<%=image_path("logo.png")%>"alt="logo">
+        <img id = "logo" src="<%=image_path("logo.png")%>"alt="logo">
+
+        <button>Learn More</button>
       </div>
     </div>
+
 </section>
