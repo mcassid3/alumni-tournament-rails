@@ -1,0 +1,45 @@
+// Place all the styles related to the Tournaments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Home Page Video*/
+.callout {
+    position: relative;
+    overflow: hidden;
+}
+.video-bg,
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+.video-overlay {
+    background: rgba(0,0,0,0.5);
+    pointer-events: none; /* Allows right clicking on the video to pause etc */
+}
+.video-bg video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.callout-content {
+    position: relative;
+    text-align: center;
+    margin: 50px 0; /* This adds some space around the video */
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+#logo {
+height: 700px;
+width: 600px;
+opacity: 0.3;
+}
