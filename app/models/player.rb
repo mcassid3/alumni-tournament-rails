@@ -3,8 +3,8 @@ class Player < ActiveRecord::Base
 
   has_many :roster_spots
   has_many :teams, through: :roster_spots
-  belongs_to :school, foreign_key: :school_idexit
-  
+  belongs_to :school, foreign_key: :school_id
+
   has_secure_password
 
   validates :first_name, presence: {message: "A player must have a first name."}

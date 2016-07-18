@@ -46,6 +46,6 @@ label, input {
   font-size: 20px
 }
 
-.header {
+.header, p  {
   text-align: center;
 }
