@@ -23,8 +23,9 @@ ActiveRecord::Schema.define(version: 20160712180006) do
     t.string   "password_digest", null: false
     t.string   "cell"
     t.boolean  "captain"
-    t.integer  "school_id",       null: false
     t.integer  "grad_year"
+    t.integer  "school_id"
+    t.integer  "current_team"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

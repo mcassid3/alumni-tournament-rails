@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+}
+
+footer{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background-color: #5E5E5F;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow:hidden;
+}

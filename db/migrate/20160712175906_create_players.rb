@@ -7,8 +7,9 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :password_digest, null: false
       t.string :cell
       t.boolean :captain
-      t.integer :school_id, null: false
       t.integer :grad_year
+      t.integer :school_id
+      t.integer :current_team
       
       t.timestamps null: false    
     end

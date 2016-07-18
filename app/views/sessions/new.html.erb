@@ -1,0 +1,22 @@
+<h1 class = "header"> Player Login</h1>
+
+<div class="login-container">
+
+<%= form_for :session, url: sessions_path do |f| %>
+
+  <div class="form-row-login">
+    <%= f.text_field :email, placeholder: 'Email' %>
+  </div>
+
+  <div class="form-row-login">
+    <%= f.password_field :password, placeholder: 'Password' %>
+
+  </div>
+
+  <div class="form-row-login">
+    <%= f.submit "Log In"  %>
+  </div>
+
+<% end %>
+
+</div>
