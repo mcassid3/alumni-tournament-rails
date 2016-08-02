@@ -11,17 +11,19 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+  <!-- D3 Library -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 
 </head>
 <body>
    <nav>
     <div class="nav-wrapper">
       <a href="<%=root_path%>" class="brand-logo"><img id ="logo-nav" src="<%=image_path("logo.png")%>" alt="logo"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="<%=root_path %>">Home</a></li>
         <li class="active"><a href="<%=root_path %>">Enter A Team</a></li>
       <% if current_user %>
-        <li><a href="<%=root_path %>">Logout</a></li>
+        <li><a href="<%=logout_path %>">Logout</a></li>
         <li class="active"><a href="<%=root_path %>">Profile</a></li>
       <% else %>
         <li class="active"><a href="<%=new_player_path %>">Join A Team</a></li>
@@ -32,7 +34,7 @@
   </nav>
 
 
-  <div class = "container">
+  <div>
     <%= yield %>
   </div>
   

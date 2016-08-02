@@ -15,11 +15,14 @@ class SessionsController < ApplicationController
 
 
   def destroy
+    session[:player_id] = nil
+    redirect_to root_path
   end
 
   private
 
   def session_params
+    p params
     params.require(:session).permit(:email, :password)
   end
 

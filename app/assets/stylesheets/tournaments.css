@@ -20,17 +20,18 @@ footer.page-footer {
   padding-top: 0px;
   margin-top: 0px;
   background: rgba(0,0,0,0.5);
+  border-top: 5px solid #587D85;
+
 
 }
-
-
 
 /*Home Page Video*/
 
 .callout {
   position: relative;
   overflow: hidden;
-  
+  left: 0;
+  right: 0;  
 }
 .video-bg,
 .video-overlay {
@@ -40,6 +41,7 @@ footer.page-footer {
     right: 0;
     bottom: 0;
     display: block;
+
 }
 .video-overlay {
     position: relative; 
@@ -50,14 +52,13 @@ footer.page-footer {
   width: 100%;
 }
 .video-bg video {
+    position: static;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        border: 1px solid green;
+
 }
 .callout-content {
     position: relative;
@@ -65,6 +66,7 @@ footer.page-footer {
     margin: 50px 0;  This adds some space around the video 
     color: #FFF;
     text-shadow: 0 0 5px rgba(0,0,0,0.4);
+    border: 1px solid orange;
 }
 
 #logo {
@@ -80,15 +82,18 @@ footer.page-footer {
 }
 
 #logo-nav {
+  position: absolute;
+  z-index: 1;
   padding-top:5px;
   padding-left: 10px;
-  height: 100px;
-  width: 85px;
+  height: 150px;
+  width: 120px;
 
 }
 
 nav a, footer a{
   color: white;
+  font-size: 30px;
   font-weight: bold;
   text-shadow:
    -1px -1px 0 #587D85,  
@@ -99,6 +104,7 @@ nav a, footer a{
 
 nav a:hover, footer a:hover{
   color: #C3C4C6;
+  font-size: 20px;
   text-shadow:
    -3px -3px 0 #587D85,  
     3px -3px 0 #587D85,
@@ -108,7 +114,10 @@ nav a:hover, footer a:hover{
 
 nav {
   background: rgba(0,0,0,0.5);
+  border-bottom: 5px solid #587D85;
+
 }
+
 
 .callout-content a {
   background: rgba(0,0,0,0.5);
@@ -121,4 +130,19 @@ nav {
   text-decoration: bold;
 }
 
+
+
+ul {
+  display: flex;
+  padding-left: 200px;
+  width: 90%;
+  justify-content: space-between;
+}
+
+ul li {
+  font-size: 20px;
+  display: inline-flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
