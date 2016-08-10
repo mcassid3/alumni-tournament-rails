@@ -1,0 +1,15 @@
+<h3 class="header"> <%= @player.first_name %> <%=@player.last_name  %>'s Profile </h1>
+
+<h5> Alumni High School</h5>
+<p><%= @player.school.name%></p>
+
+<h5> Current Team: <%= @current_team.name %> - <%= @current_team.division %></h5>
+
+<h5>Past Teams</h5>
+<ul> 
+  <%@player.teams.each do |team| %>
+    <li> <%=team.name %></li>
+  <%end %>
+
+
+</ul>

@@ -1,0 +1,148 @@
+// Place all the styles related to the Tournaments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: green;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+
+.home-container {
+  border: 2px solid black;
+  width: 100%;
+}
+
+
+footer.page-footer {
+  padding-top: 0px;
+  margin-top: 0px;
+  background: rgba(0,0,0,0.5);
+  border-top: 5px solid #587D85;
+
+}
+
+/*Home Page Video*/
+
+.callout {
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  right: 0;  
+}
+.video-bg,
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+
+}
+.video-overlay {
+    position: relative; 
+    pointer-events: none; /* Allows right clicking on the video to pause etc */
+}
+
+.video-bg, .callout {
+  width: 100%;
+}
+.video-bg video {
+    position: static;
+    width: 100%;
+
+}
+.callout-content {
+    position: relative;
+    text-align: center;
+    margin: 50px 0;  This adds some space around the video 
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+    height: 500px;
+    width: 400px;
+    opacity: 0.3;
+}
+#logo:hover {
+    opacity: 1.0;
+}
+
+#logo-nav {
+  position: absolute;
+  z-index: 1;
+  padding-top:5px;
+  padding-left: 10px;
+  height: 150px;
+  width: 120px;
+
+}
+
+nav a, footer a{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow:
+   -1px -1px 0 #587D85,  
+    1px -1px 0 #587D85,
+    -1px 1px 0 #587D85,
+     1px 1px 0 #587D85;
+}
+
+nav a:hover, footer a:hover{
+  color: #C3C4C6;
+  font-size: 20px;
+  text-shadow:
+   -3px -3px 0 #587D85,  
+    3px -3px 0 #587D85,
+    -3px 3px 0 #587D85,
+     3px 3px 0 #587D85;
+}
+
+nav {
+  background: rgba(0,0,0,0.5);
+  border-bottom: 5px solid #587D85;
+
+}
+
+
+.callout-content a {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  opacity: .75;
+}
+.callout-content a:hover {
+  background: #587D85;
+  color: white ;
+  text-decoration: bold;
+  border: 2px solid #9B9CA0;
+  opacity: 1.0;
+
+}
+
+
+
+ul {
+  display: flex;
+  padding-left: 200px;
+  width: 90%;
+  justify-content: space-between;
+}
+
+ul li {
+  font-size: 20px;
+  display: inline-flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
