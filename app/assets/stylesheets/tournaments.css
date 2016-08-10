@@ -6,13 +6,16 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: green
+    background: green;
   }
 
-  main {
+main {
     flex: 1 0 auto;
   }
-.container {
+
+.home-container {
+  border: 2px solid black;
+  width: 100%;
 }
 
 
@@ -21,7 +24,6 @@ footer.page-footer {
   margin-top: 0px;
   background: rgba(0,0,0,0.5);
   border-top: 5px solid #587D85;
-
 
 }
 
@@ -53,11 +55,7 @@ footer.page-footer {
 }
 .video-bg video {
     position: static;
-    min-width: 100%;
-    min-height: 100%;
     width: 100%;
-    height: 100%;
-        border: 1px solid green;
 
 }
 .callout-content {
@@ -66,7 +64,6 @@ footer.page-footer {
     margin: 50px 0;  This adds some space around the video 
     color: #FFF;
     text-shadow: 0 0 5px rgba(0,0,0,0.4);
-    border: 1px solid orange;
 }
 
 #logo {
@@ -128,6 +125,9 @@ nav {
   background: #587D85;
   color: white ;
   text-decoration: bold;
+  border: 2px solid #9B9CA0;
+  opacity: 1.0;
+
 }
 
 

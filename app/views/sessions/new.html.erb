@@ -1,22 +1,21 @@
-<h1 class = "header"> Player Login</h1>
+
+<div class="login-container">
 
 <div class="row">
+<h1 class = "header"> Player Login</h1>
 
-<%= form_for :session, url: sessions_path,  class: "col s12" do |f| %>
+  <%= form_for :player, url: sessions_path,  class: "col s12" do |f| %>
+    <div class="input-field col s12">
+      <%= f.text_field :email, placeholder: 'Email', class: "validate" %>
+    </div>
+    <div class="input-field col s12">
+      <%= f.password_field :password, placeholder: 'password', class: "validate" %>
+    </div>
+    <div class="input-field col s12">
+      <%= f.submit "Log In", class: "btn waves-effect waves-light"  %>
+    </div>
+  <% end %>
 
-  <div class="input-field col s12">
-    <%= f.text_field :email, placeholder: 'Email', class: "validate" %>
   </div>
-
-  <div class="input-field col s12">
-    <%= f.password_field :password, placeholder: 'password', class: "validate" %>
-
-  </div>
-
-  <div class="input-field col s12">
-    <%= f.submit "Log In", class: "btn waves-effect waves-light"  %>
-  </div>
-
-<% end %>
 
 </div>

@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20160712180006) do
     t.integer  "school_id"
     t.integer  "tournament_id", null: false
     t.string   "division",      null: false
+    t.integer  "year"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

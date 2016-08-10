@@ -21,13 +21,13 @@
       <a href="<%=root_path%>" class="brand-logo"><img id ="logo-nav" src="<%=image_path("logo.png")%>" alt="logo"></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="<%=root_path %>">Home</a></li>
-        <li class="active"><a href="<%=root_path %>">Enter A Team</a></li>
-      <% if current_user %>
-        <li><a href="<%=logout_path %>">Logout</a></li>
-        <li class="active"><a href="<%=root_path %>">Profile</a></li>
+<!--         <li class="active"><a href="<%=root_path %>">Enter A Team</a></li>
+ -->      <% if current_user %>
+<!--         <li><a href="<%=logout_path %>">Logout</a></li>
+ -->        <!-- <li class="active"><a href="<%=root_path %>">Profile</a></li> -->
       <% else %>
-        <li class="active"><a href="<%=new_player_path %>">Join A Team</a></li>
-        <li class="active"><a href="<%=login_path %>">Login</a></li>
+        <!-- <li class="active"><a href="<%=new_player_path %>">Join A Team</a></li> -->
+        <!-- <li class="active"><a href="<%=login_path %>">Login</a></li> -->
       <% end %>
       </ul>
     </div>
@@ -52,8 +52,6 @@
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
                 </ul>
               </div>
             </div>

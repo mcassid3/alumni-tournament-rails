@@ -5,6 +5,7 @@ class CreateTeams < ActiveRecord::Migration
       t.integer :school_id
       t.integer :tournament_id, null: false
       t.string :division, null: false
+      t.integer :year
       
       t.timestamps null: false    
     end

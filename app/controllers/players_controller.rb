@@ -22,9 +22,8 @@ class PlayersController < ApplicationController
   end
 
   def show
-    @player = Player.find(params[:id])
+    @player = Player.find(session[:player_id])
     @current_team = Team.find(@player.current_team)
-
   end
 
 
