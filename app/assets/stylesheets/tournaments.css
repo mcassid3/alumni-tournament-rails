@@ -6,12 +6,9 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: green;
   }
 
-main {
-    flex: 1 0 auto;
-  }
+
 
 .home-container {
   border: 2px solid black;
@@ -80,15 +77,13 @@ footer.page-footer {
 
 #logo-nav {
   position: absolute;
-  z-index: 1;
-  padding-top:5px;
-  padding-left: 10px;
-  height: 150px;
-  width: 120px;
-
+  z-index: 100;
+  padding-top: 5px;
+  padding-left: 20px;
+  height: 70px;
 }
 
-nav a, footer a{
+nav a {
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -99,7 +94,13 @@ nav a, footer a{
      1px 1px 0 #587D85;
 }
 
-nav a:hover, footer a:hover{
+nav .brand-logo {
+  z-index: 10;
+  position: absolute;
+  left: 10px;
+
+}
+nav a:hover {
   color: #C3C4C6;
   font-size: 20px;
   text-shadow:
@@ -112,7 +113,6 @@ nav a:hover, footer a:hover{
 nav {
   background: rgba(0,0,0,0.5);
   border-bottom: 5px solid #587D85;
-
 }
 
 
@@ -132,14 +132,14 @@ nav {
 
 
 
-ul {
+nav ul {
   display: flex;
   padding-left: 200px;
   width: 90%;
   justify-content: space-between;
 }
 
-ul li {
+nav ul li {
   font-size: 20px;
   display: inline-flex;
   padding-left: 50px;
