@@ -44,8 +44,7 @@ footer.page-footer {
 }
 .video-overlay {
     position: relative; 
-    pointer-events: none; /* Allows right clicking on the video to pause etc */
-}
+    pointer-events: none; 
 
 .video-bg, .callout {
   width: 100%;
