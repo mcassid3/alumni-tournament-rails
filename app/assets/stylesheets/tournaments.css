@@ -55,10 +55,11 @@ footer.page-footer {
     width: 100%;
 
 }
+
 .callout-content {
     position: relative;
     text-align: center;
-    margin: 50px 0;  This adds some space around the video 
+    margin: 50px 0;
     color: #FFF;
     text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
@@ -71,6 +72,7 @@ footer.page-footer {
     width: 400px;
     opacity: 0.3;
 }
+
 #logo:hover {
     opacity: 1.0;
 }
