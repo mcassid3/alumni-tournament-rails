@@ -8,8 +8,6 @@ body {
     flex-direction: column;
   }
 
-
-
 .home-container {
   border: 2px solid black;
   width: 100%;
@@ -32,6 +30,7 @@ footer.page-footer {
   left: 0;
   right: 0;  
 }
+
 .video-bg,
 .video-overlay {
     position: absolute;
@@ -45,10 +44,12 @@ footer.page-footer {
 .video-overlay {
     position: relative; 
     pointer-events: none; 
+}
 
 .video-bg, .callout {
   width: 100%;
 }
+
 .video-bg video {
     position: static;
     width: 100%;
@@ -99,8 +100,8 @@ nav .brand-logo {
   z-index: 10;
   position: absolute;
   left: 10px;
-
 }
+
 nav a:hover {
   color: #C3C4C6;
   font-size: 20px;
@@ -122,6 +123,7 @@ nav {
   color: white;
   opacity: .75;
 }
+
 .callout-content a:hover {
   background: #587D85;
   color: white ;
@@ -130,8 +132,6 @@ nav {
   opacity: 1.0;
 
 }
-
-
 
 nav ul {
   display: flex;
